@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-
 import UserCard from './Components/UserCard';
+import FollowersList from './Components/FollowersList';
 
 const githubApi = 'https://api.github.com/users/mariehposa';
 export default class App extends React.Component {
@@ -34,6 +34,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <UserCard user={this.state.usersDetails} />
+        <FollowersList follower={this.state.followers} />
       </div>
     );
   }

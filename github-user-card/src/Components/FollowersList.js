@@ -1,7 +1,7 @@
 import React from 'react';
-import UserCard from './UserCard';
+import FollowersCard from './FollowersCard';
 
-export default class UserList extends React.Component {
+export default class FollowersList extends React.Component {
     
     render() {
 
