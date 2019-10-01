@@ -10,4 +10,5 @@ export default class GitHubUsers extends React.Component {
             usersDetails: {},
         };
     }
+    
 }
