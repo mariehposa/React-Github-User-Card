@@ -8,7 +8,7 @@ export default class FollowersCard extends React.Component {
 
     
     render() {
-        const {avatar_url, bio, followers, following, name, login, url, email} = this.props.user;
+        const {avatar_url, bio, organizations_url, followers, following, name, login, url, email} = this.props.user;
         return (
             <div>
                 <img src={avatar_url} />
@@ -16,7 +16,7 @@ export default class FollowersCard extends React.Component {
                 <p>Username: {login}</p>
                 <p>Followers: {followers}</p>
                 <p>Following: {following}</p>
-                <p>Organization: {organizations_url}</p>
+                <p>Organizations: {organizations_url}</p>
             </div>
         );
     }

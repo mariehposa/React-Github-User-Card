@@ -8,7 +8,7 @@ export default class FollowersList extends React.Component {
         return (
             <div>
                 {
-                    
+                    this.props.followers.map(follower => <FollowersCard user = {follower} /> )
                 }
             </div>
         );

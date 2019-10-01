@@ -34,7 +34,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <UserCard user={this.state.usersDetails} />
-        <FollowersList follower={this.state.followers} />
+        <FollowersList followers={this.state.followers} />
       </div>
     );
   }
