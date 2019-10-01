@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 
+import UserCard from './Components/UserCard';
+
 const githubApi = 'https://api.github.com/users/mariehposa';
 export default class App extends React.Component {
   constructor(props) {
@@ -22,7 +24,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
+        <UserCard user={this.state.usersDetails} />
       </div>
     );
   }
