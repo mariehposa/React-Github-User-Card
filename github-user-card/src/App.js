@@ -21,7 +21,7 @@ export default class App extends React.Component {
               this.setState({ usersDetails: res.data });
               axios.get(res.data.followers_url)
                 .then( res => {
-                  console.log(res.data);
+                  //console.log(res.data);
                   this.setState({ followers: res.data})
                 })
           })

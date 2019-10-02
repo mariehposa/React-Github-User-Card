@@ -1,20 +1,18 @@
 import React from 'react';
+import { StyledDiv, ParentDiv, Image } from './Styles';
 
 export default class FollowersCard extends React.Component {
-    constructor (props) {
-        super(props);
-
-    }
-
-    
+   
     render() {
         const {avatar_url, organizations_url, login} = this.props.user;
         return (
-            <div>
-                <img src={avatar_url} />
-                <p>Username: {login}</p>
-                <p>Organizations: {organizations_url}</p>
-            </div>
+            <ParentDiv>
+                <StyledDiv>
+                    <Image src={avatar_url} />
+                    <p>Username: {login}</p>
+                    <p>Organizations: {organizations_url}</p>
+                </StyledDiv>
+            </ParentDiv>
         );
     }
 }
